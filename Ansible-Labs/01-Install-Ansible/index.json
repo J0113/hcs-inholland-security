@@ -1,0 +1,23 @@
+{
+    "title": "Leason 1: Ansible installation",
+    "description": "Install Ansible and verify functionality",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "setup.sh"
+      },
+      "steps": [
+        {
+          "title": "Install Ansible",
+          "text": "step1/text.md",
+          "verify": "step1/verify.sh"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
