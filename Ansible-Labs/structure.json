@@ -1,5 +1,12 @@
 {
     "items": [
-      { "path": "01-Install-Ansible" }
+      { "path": "01-Install-Ansible" },
+      { "path": "02-Ansible-Host-File" },
+      { "path": "03-Ansible-MOTD-Push" },
+      { "path": "04-Ansible-System-Facts-Grouping" },
+      { "path": "05-Ansible-Package-Management" },
+      { "path": "06-Ansible-Web-Server-Env-Deploy" },
+      { "path": "07-Ansible-Package-Cleanup-Security" },
+      { "path": "08-Ansible-Create-Users" }
     ]
   }
