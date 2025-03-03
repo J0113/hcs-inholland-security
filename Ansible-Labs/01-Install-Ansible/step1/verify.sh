@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dpkg -s ansible >/dev/null 2>&1
+dpkg -s ansible
