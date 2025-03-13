@@ -1,0 +1,1 @@
+In this lab we will configure a firewall.

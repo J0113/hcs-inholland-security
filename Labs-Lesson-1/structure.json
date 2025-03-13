@@ -1,5 +1,6 @@
 {
     "items": [
-      { "path": "02-ClamAV" }
+      { "path": "02-ClamAV" },
+      { "path": "03-Firewall" }
     ]
   }
