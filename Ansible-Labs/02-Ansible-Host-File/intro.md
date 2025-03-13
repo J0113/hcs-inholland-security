@@ -1,1 +1,1 @@
-#Welcome to introduction Ansible
+#Creating an Ansible inventory-file
