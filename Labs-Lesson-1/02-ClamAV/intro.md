@@ -1,0 +1,1 @@
+In this lab we will use ClamAV to scan a system. ClamAV is an anti-virus scanner for Linux.
