@@ -1,1 +1,1 @@
-#Welcome to ProLUG Ansible
+#Welcome to the Ansible introduction
