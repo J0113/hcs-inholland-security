@@ -1,6 +1,6 @@
 {
-    "title": "Let's do Linux Security",
-    "description": "Update a Golden Image",
+    "title": "Lab 3 - Update base image",
+    "description": "Patching the base image to deploy new VM's.",
     "details": {
       "intro": {
         "text": "intro.md",

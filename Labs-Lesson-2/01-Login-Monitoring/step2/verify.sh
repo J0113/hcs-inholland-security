@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh node01 'id realuser'
+grep baduser /var/log/* | grep "NOT in sudoers"

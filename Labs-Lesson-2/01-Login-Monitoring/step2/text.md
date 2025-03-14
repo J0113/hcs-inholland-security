@@ -1,66 +1,48 @@
-The one user that is supposed to exist is realuser. 
-
-Create a realuser account on both systems.
-
-Ensure that root can log in as that user. 
-
-Now, we may not always do this activity like this in the enterprise, but the pieces are valuable to understand.
+Your Security Operations team has informed you that an alert for sudo activity has happened on a server. Investigate the sudo logs and see what the user is attempting to do.
 
 <br>
 
 ### Solution
 <details>
 <summary>Solution</summary>
-Check if the user exists on both servers
+User logging may take up to 60 seconds to execute and populate the logs for this. If you cannot easily wait 60 seconds, push this command
 
 ```plain
-id realuser
-ssh node01 'id realuser'
+echo "I am patient and can wait 60 seconds"
+sleep 60
 ```{{exec}}
 
-So we see that realuser exists on controlplane but the user was not created on node01. Let's create it.
+Check the logs where Ubuntu keeps sudo requests. They may take up to 60 seconds to populate with the bad sudo requests.
 
 ```plain
-ssh node01 'useradd -m realuser'
+tail -20 /var/log/auth.log
 ```{{exec}}
 
-We normally wouldn't do this part, as some LDAP or outside authority would give the user password, but we'll do it for now to be able to establish connection.
+Also check 
 
 ```plain
-ssh node01
+tail -20 /var/log/syslog
 ```{{exec}}
 
-Create a password 1234 (I know, super secure, but useful for lab testing)
+You can search all the logs for baduser like this as well.
 
 ```plain
-passwd realuser
+grep baduser /var/log/*
 ```{{exec}}
 
-You will have to hit enter twice
-
-Be sure to exit back to the controlplane node
+You will eventually see the line 
 ```plain
-exit
-```{{exec}}
+baduser : user NOT in sudoers
+```
 
-Clear the old entries
+This indicates a user is trying to sudo and use elevated permissions that they do not have. We can then either remove user access permissions or grant them the correct permissions.This line is how you know you can continue with lab.
 
-```plain
-ssh node01 'echo "" > /var/log/auth.log'
-```{{exec}}
-
-Rerun the script /root/ssh_script and then check the invalid users from node01. This should take ~25 seconds.
+To see root's crontab and how we're causing all the failed sudo attempts, use this command:
 
 ```plain
-/root/ssh_script.sh
+crontab -l
 ```{{exec}}
 
-Recheck for Invalid users. You should no longer see realuser in invalid users.
-
-```plain
-ssh node01 'grep Invalid /var/log/auth.log'
-```{{exec}}
-
-You'll still see errors with the login, but now at least the realuser is no longer Invalid. We'll fix their login in the next section.
+You can see that root is using baduser account to attempt sudo commands that it doesn't yet have permissions to execute.
 
 </details>

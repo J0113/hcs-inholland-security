@@ -1,2 +1,1 @@
-Look at you, learning Linux Security!
-You updated a golden image so the new systems you deploy are patched and do not introduce more vulnerabilities into the environment. You further removed older packages that did not meet the security baseline.
+That's it! We can shut-down the system and use the hypervisor to store the VM as a template. Now we can deploy secure VM's.

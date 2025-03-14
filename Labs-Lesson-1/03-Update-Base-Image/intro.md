@@ -1,1 +1,1 @@
-Welcome to ProLUG Linux Security
+In this lab we will update base image. This base image can be converted to a template to be used when rolling out new VM's. The base image should be patched every so often to ensure no security issues are present.

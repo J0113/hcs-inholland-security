@@ -1,1 +1,1 @@
-Welcome to ProLUG Linux Security
+In this lab we will look into log files to see bad actors. 

@@ -1,0 +1,1 @@
+In this lab we will setup key-based authentication for SSH.

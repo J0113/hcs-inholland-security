@@ -1,6 +1,6 @@
 {
-    "title": "Lab 1 - Unusual activity",
-    "description": "Let's find the unusual activity in the log files.",
+    "title": "Lab 2 - SSH key-based authentication.",
+    "description": "Key-based authentication is more secure than using a regular password. Once setup you will be able to login faster.",
     "details": {
       "intro": {
         "text": "intro.md",
@@ -8,21 +8,16 @@
       },
       "steps": [
         {
-          "title": "Find the Unusual user activity on node01",
+          "title": "Setup the student user.",
           "text": "step1/text.md",
           "verify": "step1/verify.sh"
         },
         {
-          "title": "Find the Unusual sudo activity",
+          "title": "Setup key-based authentication.",
           "text": "step2/text.md",
           "verify": "step2/verify.sh"
         }
       ],
-	    "assets": {
-	       "host01": [
-		        {"file": "ssh_script.sh", "target": "~/"}   
-         ]
-        },
       "finish": {
         "text": "finish.md"
       }

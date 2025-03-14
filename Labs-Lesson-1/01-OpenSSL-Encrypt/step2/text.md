@@ -23,7 +23,7 @@ openssl pkeyutl -encrypt -pubin -inkey public.pem -in message.txt -out message.e
 Check the content of the message.enc.
 
 ```plain
-less message.enc
+xxd message.enc
 ```{{exec}}
 
 </details>

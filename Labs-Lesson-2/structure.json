@@ -1,5 +1,6 @@
 {
     "items": [
-      { "path": "01-Login-Monitoring" }
+      { "path": "01-Login-Monitoring" },
+      { "path": "02-SSH-Keys" }
     ]
   }
