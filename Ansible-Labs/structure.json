@@ -2,11 +2,17 @@
     "items": [
       { "path": "01-Install-Ansible" },
       { "path": "02-Ansible-Host-File" },
-      { "path": "03-Ansible-MOTD-Push" },
-      { "path": "04-Ansible-System-Facts-Grouping" },
-      { "path": "05-Ansible-Package-Management" },
-      { "path": "06-Ansible-Web-Server-Env-Deploy" },
-      { "path": "07-Ansible-Package-Cleanup-Security" },
-      { "path": "08-Ansible-Create-Users" }
+      { "path": "03-Ansible-Ad-Hoc" },
+      { "path": "04-Ansible-Ansible-Ad-Hoc-lineinfile" },
+      { "path": "05-Ansible-Plabook-Staging" },
+      { "path": "06-Ansible-Playbook-Deployer" },
+      { "path": "07-Ansible-MOTD-Push" },
+      { "path": "08-Ansible-System-Facts-Grouping" }
+      { "path": "09-Ansible-Create-Users" },
+      { "path": "10-Ansible-Package-Management" },
+      { "path": "11-Ansible-Web-Server-Env-Deploy" },
+      { "path": "12-Ansible-Package-Cleanup-Security" },
+      { "path": "13-Ansible-Firewall-Environment-Configure" },
+      { "path": "101-Enterprise-Ansible-Sandbox" }
     ]
   }
