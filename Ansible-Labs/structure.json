@@ -7,7 +7,7 @@
       { "path": "05-Ansible-Plabook-Staging" },
       { "path": "06-Ansible-Playbook-Deployer" },
       { "path": "07-Ansible-MOTD-Push" },
-      { "path": "08-Ansible-System-Facts-Grouping" }
+      { "path": "08-Ansible-System-Facts-Grouping" },
       { "path": "09-Ansible-Create-Users" },
       { "path": "10-Ansible-Package-Management" },
       { "path": "11-Ansible-Web-Server-Env-Deploy" },
