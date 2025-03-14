@@ -1,6 +1,7 @@
 {
     "items": [
+      { "path": "01-OpenSSL-Encrypt" },
       { "path": "02-ClamAV" },
-      { "path": "03-Firewall" }
+      { "path": "03-Update-Base-Image" }
     ]
   }

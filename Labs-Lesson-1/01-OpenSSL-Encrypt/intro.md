@@ -1,0 +1,1 @@
+In this lab we will encrypt and decrypt a message with OpenSSL.
