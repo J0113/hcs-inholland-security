@@ -1,0 +1,33 @@
+{
+    "title": "Lab 1 - Platform scanning",
+    "description": "Scanning Ubuntu with Lynis and OpenSCAP.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "setup.sh"
+      },
+      "steps": [
+        {
+          "title": "Lynis",
+          "text": "step1/text.md",
+          "verify": "step1/verify.sh"
+        },
+        {
+          "title": "OpenSCAP",
+          "text": "step2/text.md",
+          "verify": "step2/verify.sh"
+        }
+      ],
+      "assets": {
+	       "host01": [
+		        {"file": "Ubuntu24-benchmark.xml", "target": "~/"}   
+         ]
+        },
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }

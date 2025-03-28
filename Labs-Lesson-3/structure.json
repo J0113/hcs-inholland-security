@@ -1,0 +1,6 @@
+{
+    "items": [
+      { "path": "01-Platform-Scanning" },
+      { "path": "02-Container-Scanning" }
+    ]
+  }

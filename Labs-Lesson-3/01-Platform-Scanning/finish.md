@@ -1,0 +1,1 @@
+That's it! We have now scanned an Ubuntu system with both Lynis and OpenSCAP.

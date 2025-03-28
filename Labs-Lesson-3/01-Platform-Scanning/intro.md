@@ -1,0 +1,1 @@
+In this lab we will use Lynis and OpenSCAP to scan the Ubuntu system.
