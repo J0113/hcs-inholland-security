@@ -17,7 +17,6 @@ ssh node01 'useradd -s /bin/bash -m student'
 Then setup the password (type student twice).
 ```plain
 passwd student
-ssh node01 'passwd student'
 ```{{exec}}
 
 And on the remote machine as well.
