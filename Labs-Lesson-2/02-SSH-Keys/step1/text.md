@@ -20,6 +20,11 @@ passwd student
 ssh node01 'passwd student'
 ```{{exec}}
 
+And on the remote machine as well.
+```plain
+ssh node01 'passwd student'
+```{{exec}}
+
 Check if you can ssh to node01
 ```plain
 ssh student@node01

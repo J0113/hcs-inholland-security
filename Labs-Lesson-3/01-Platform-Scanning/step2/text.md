@@ -1,6 +1,6 @@
 Now we are going to scan the system with OpenSCAP.
 
-1. Install openscap with apt-get (hint: openscap-scanner).
+1. Install openscap with apt-get (hint: apt search openscap).
 2. Read the man page about OpenSCAP.
 3. Run a system audit, output the html report /var/log/openscap.html
 4. Open the report file. What is the hardening score?
@@ -13,17 +13,17 @@ Now we are going to scan the system with OpenSCAP.
 Install OpenSCAP with apt.
 
 ```plain
-apt-get install openscap-scanner -y
+apt-get install libopenscap8 -y
 ```{{exec}}
 
 Read the documentation.
 
 ```plain
-man openscap
+man oscap
 ```{{exec}}
 
 ```plain
-openscap xccdf eval -h
+oscap xccdf eval -h
 ```{{exec}}
 
 What command do we need to use to scan the system?
