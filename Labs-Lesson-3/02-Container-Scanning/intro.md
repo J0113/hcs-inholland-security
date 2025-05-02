@@ -1,1 +1,1 @@
-In this lab we will setup key-based authentication for SSH.
+In this lab we will scan containers with Trivy and Grype.
