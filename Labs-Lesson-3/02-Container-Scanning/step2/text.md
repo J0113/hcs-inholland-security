@@ -6,7 +6,7 @@ A webserver is running on port 80. Check what image the webserver is using, and 
 <details>
 <summary>Solution</summary>
 
-Verify that the webserver is running.
+Verify that the webserver is running. If the server is not yet online, docker might not be ready yet.
 ```plain
 curl -sS -D - localhost -o /dev/null
 ```{{exec}}
