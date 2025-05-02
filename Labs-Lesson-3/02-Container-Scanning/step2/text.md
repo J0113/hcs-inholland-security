@@ -1,4 +1,4 @@
-Now, generate a SSH key on the local machine for the student user and copy it to node01.
+A webserver is running on port 80. Check what image the webserver is using, and scan with trivy.
 
 <br>
 
@@ -6,35 +6,23 @@ Now, generate a SSH key on the local machine for the student user and copy it to
 <details>
 <summary>Solution</summary>
 
-Switch to the student user.
+Verify that the webserver is running.
 ```plain
-su - student
+curl -sS -D - localhost -o /dev/null
 ```{{exec}}
 
-Generate a key that we can push over to node01 and authenticate with, the default options are good.
-
+Check the running containers. What image is being used?
 ```plain
-ssh-keygen
+docker ps
 ```{{exec}}
 
-You can verify the new keys with the command below
-
+Start a scan with trivy. Output the results to results.txt.
 ```plain
-ls -l ~/.ssh
+trivy image -o results.txt bkimminich/juice-shop
 ```{{exec}}
 
-Note: You created a private key and a public key (*.pub).
-
-Push the key file over to student@node01 (Enter the password 'student')
-
+Check the results. How many issues are found?
 ```plain
-ssh-copy-id student@node01
+less results.txt
 ```{{exec}}
-
-Test your connection via your private key into student@node01.
-
-```plain
-ssh student@node01 'hostname; id'
-```{{exec}}
-
 </details>

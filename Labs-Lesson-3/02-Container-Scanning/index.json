@@ -1,6 +1,6 @@
 {
-    "title": "Lab 2 - SSH key-based authentication.",
-    "description": "Key-based authentication is more secure than using a regular password. Once setup you will be able to login faster.",
+    "title": "Lab 2 - Container scanning.",
+    "description": "Scanning container images.",
     "details": {
       "intro": {
         "text": "intro.md",
@@ -8,14 +8,19 @@
       },
       "steps": [
         {
-          "title": "Setup the student user.",
+          "title": "Install Trivy.",
           "text": "step1/text.md",
           "verify": "step1/verify.sh"
         },
         {
-          "title": "Setup key-based authentication.",
+          "title": "Scanning a container image with Trivy.",
           "text": "step2/text.md",
           "verify": "step2/verify.sh"
+        },
+        {
+          "title": "Scanning a container with Grype.",
+          "text": "step3/text.md",
+          "verify": "step3/verify.sh"
         }
       ],
       "finish": {
