@@ -41,30 +41,29 @@ unzip scap-security-guide-0.1.76.zip scap-security-guide-0.1.76/ssg-ubuntu2404-d
 cp -rp scap-security-guide-0.1.76/ssg-ubuntu2404-ds.xml .
 ```{{exec}}
 
-Check the info on this DataSet.
-
+Check the info in this DataSet.
 ```plain
 oscap info ssg-ubuntu2404-ds.xml
 ```{{exec}}
 
 What command do we need to use to scan the system?
 
-Let's scan the system 
-
+Let's scan the system with openscap and log to report.html
 ```plain
-oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_cis_level1_server --report report.html ssg-ubuntu2404-ds.xml
+oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_cis_level1_server --report /root/report.html ssg-ubuntu2404-ds.xml
 ```{{exec}}
 
 Read the logfile. What is the hardening score?
 
 ```plain
-less /var/log/lynis.log
+cd
+less /root/report.html
 ```{{exec}}
 
 Extract the score with Grep.
 
 ```plain
-grep "Hardening index" /var/log/lynis.log
+grep "Hardening" /root/report.html
 ```{{exec}}
  
 </details>
