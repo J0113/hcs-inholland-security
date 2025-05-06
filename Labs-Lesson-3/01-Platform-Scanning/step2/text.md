@@ -26,6 +26,21 @@ man oscap
 oscap xccdf eval -h
 ```{{exec}}
 
+Now we need to download the DataSource for Ubuntu2404 to scan the system.
+
+```plain
+mkdir -p /usr/share/xml/scap/ssg/content
+cd /usr/share/xml/scap/ssg/content
+wget https://github.com/ComplianceAsCode/content/releases/download/v0.1.76/scap-security-guide-0.1.76.zip
+```{{exec}}
+
+Extract the correct DataSet from the zipfile.
+
+```plain
+unzip scap-security-guide-0.1.76.zip scap-security-guide-0.1.76/ssg-ubuntu2404-ds.xml -d .
+cp -rp scap-security-guide-0.1.76/ssg-ubuntu2404-ds.xml .
+```{{exec}}
+
 What command do we need to use to scan the system?
 
 Let's scan the system and output the scan to /var/log/lynis.log
