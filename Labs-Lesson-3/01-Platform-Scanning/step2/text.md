@@ -13,7 +13,7 @@ Now we are going to scan the system with OpenSCAP.
 Install OpenSCAP with apt.
 
 ```plain
-apt-get install libopenscap8 -y
+apt-get install openscap-scanner -y
 ```{{exec}}
 
 Read the documentation.
