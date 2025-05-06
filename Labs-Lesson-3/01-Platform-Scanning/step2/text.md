@@ -63,7 +63,7 @@ less /root/report.html
 Extract the score with Grep.
 
 ```plain
-grep "Hardening" /root/report.html
+grep "scoring" /root/report.html
 ```{{exec}}
  
 </details>
