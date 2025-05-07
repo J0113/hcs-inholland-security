@@ -63,7 +63,7 @@ less /root/report.html
 Extract the score with Grep.
 
 ```plain
-grep "scoring" /root/report.html
+grep "scoring" /root/report.html | grep -o "[0-9]\+\.[0-9]\+%" | head -1
 ```{{exec}}
  
 </details>
