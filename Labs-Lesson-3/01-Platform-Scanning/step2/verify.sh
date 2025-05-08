@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grep baduser /var/log/* | grep "NOT in sudoers"
+stat /var/log/openscap.html
