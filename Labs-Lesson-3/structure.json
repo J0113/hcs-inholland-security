@@ -1,6 +1,6 @@
 {
     "items": [
-      { "path": "01-Platform-Scanning-no-solution" },
-      { "path": "02-Container-Scanning-no-solution" }
+      { "path": "01-Platform-Scanning" },
+      { "path": "02-Container-Scanning" }
     ]
   }
