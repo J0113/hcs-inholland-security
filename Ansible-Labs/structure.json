@@ -13,6 +13,7 @@
       { "path": "11-Ansible-Web-Server-Env-Deploy" },
       { "path": "12-Ansible-Package-Cleanup-Security" },
       { "path": "13-Ansible-Firewall-Environment-Configure" },
-      { "path": "101-Enterprise-Ansible-Sandbox" }
+      { "path": "101-Enterprise-Ansible-Sandbox" },
+      { "path": "102-Ansible-Playground" }
     ]
   }

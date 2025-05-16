@@ -1,0 +1,12 @@
+---
+
+- name: Show server info
+  hosts: servers
+  vars:
+  gather_facts: True
+  become: True
+  tasks:
+    - name: Show all facts
+      ansible.builtin.debug:
+        var: ansible_facts
+
